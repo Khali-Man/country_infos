@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://kit.fontawesome.com/60be67db16.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="countrySearch.css">
+    <title>CountrySearch</title>
+</head>
+<body>
+    <header>
+        <h1 class="where">Where in the world?</h1>
+        <div class="dark-mode">
+            <i class="fa-regular fa-moon"></i>
+            <span class="dark">Dark Mode</span>
+        </div>
+    </header>
+
+
+    
+    <nav>
+        <div class="search-bar">
+            <i class="fa-solid fa-magnifying-glass"></i>
+            <input type="text" class="search" placeholder="Search for a country...">
+        </div>
+        <select id="selector">
+            <option selected value="1">Filter by Region</option>
+            <option value="2" class="tryout">Africa</option>
+            <option value="3" class="tryout">America</option>
+            <option value="4" class="tryout">Asia</option>
+            <option value="5" class="tryout">Europe</option>
+            <option value="6" class="tryout">Oceania</option>
+            <option value="7" class="tryout">Antarctic</option>
+        </select>
+    </nav>
+    <section>
+    </section>
+
+    <aside>
+        <div class="before-sec">
+            <button class="back-btn">Back</button>
+        </div>
+    
+        <div class="more-info">
+            <img src="" alt="" class="more-info-img">
+    
+            <div class="country-infos">
+
+                <div class="left-info">
+                    <h1 id="country-name"></h1>
+                    <ul>
+                        <li>Native Name: <span class="native-name" id="native-name"></span></li>
+                        <li>Population: <span class="native-name" id="populationn"></span></li>
+                        <li>Region: <span class="native-name" id="regionn"></span></li>
+                        <li>Sub Region: <span class="native-name" id="sub-region"></span></li>
+                        <li>Capital: <span class="native-name" id="capitall"></span></li>
+                    </ul>
+                </div>
+
+                <div class="right-info">    
+                    <ul>
+                        <li>Top Level Domain: <span class="native-name" id="tld"></span></li>
+                        <li>Currencies: <span class="native-name" id="currency"></span></li>
+                        <li>Languages: <span class="native-name" id="Languages"></span></li>
+                    </ul>
+                </div>
+
+
+                <div class="border-countries">
+                    <div class="border-count"> Border Countries: 
+                    </div> 
+                </div>
+            </div>
+        </div>
+    </aside>
+
+    <script src="countrySearch.js"></script>
+</body>
+</html>

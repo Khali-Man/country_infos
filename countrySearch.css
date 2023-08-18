@@ -1,0 +1,376 @@
+@import url(https://fonts.google.com/specimen/Nunito+Sans);
+* {
+    font-family: Nunito Sans, Arial;
+    box-sizing: border-box;
+}
+body {
+    background-color: hsl(0, 0%, 98%);
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+}
+header {
+    background-color: white;
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: auto;
+    padding: 2% 5%;
+    box-shadow: 0px 1px 1px -1px hsl(0, 0%, 52%);
+    margin-bottom: 30px;
+}
+nav {
+    display: flex; 
+    justify-content: space-between;
+    padding: 2% 5%;
+}
+h1 {
+    margin: 0;
+    font-size: 20px;
+}
+.dark-mode {
+    cursor: pointer;
+}
+.search-bar {
+    position: relative;
+}
+.search {
+    padding: 10px 70px;
+    background-color: white;
+    outline: none;
+    border: none;
+    box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+}
+.fa-solid {
+    position: absolute;
+    top: 30%;
+    left: 5%;
+}
+#selector {
+    outline: none;
+    border: none;
+    padding: 10px 20px;
+    box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+    overflow: hidden;
+}
+.tryout {
+    margin: 0;
+    padding: 0;
+}
+section {
+    display: grid;
+    grid-template-columns: 20% 20% 20% 20%;
+    column-gap: 5%;
+    row-gap: 20px;
+    max-width: 100%;
+    box-sizing: border-box;
+    padding: 2% 0 2% 5%;
+}
+.country-info{
+    background-color: white;
+    box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+}
+.country-img{
+    height: 100px;
+    width: 100%;
+}
+.country-name {
+    color: black;
+    font-size: 14px;
+    overflow: hidden;
+    margin: 15px 0 15px 15px;
+    font-weight: bold;
+    white-space: nowrap;
+}
+.population, .region, .capital {
+    color: black;
+    font-size: 12px;
+    letter-spacing: .3px;
+    margin: 0 0 5px 15px;
+}
+.populate, .reg, .capit{
+    color: hsl(0, 1%, 71%);
+    font-size: 12px;
+}
+.capital {
+    margin-bottom: 30px;
+}
+aside {
+    display: none;
+    flex-direction: column;
+    gap: 50px;
+    padding: 2% 0 2% 5%;
+    max-width: 100%;
+    overflow: hidden;
+    box-sizing: border-box;
+}
+.more-info {
+    display: flex;
+    height: 400px;
+    column-gap: 50px;
+}
+.more-info-img{
+    width: 40%;
+    height: 70%;
+}
+.country-infos{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: auto auto;
+    width: 50%;
+    height: 70%;
+}
+.left-info {
+    grid-column-start: 1;
+    grid-column-end: 2;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.right-info {
+    grid-column-start: 2;
+    grid-column-end: 3;
+    grid-row-start: 1;
+    grid-row-end: 2;
+}
+.border-countries {
+    grid-column-start: 1;
+    grid-column-end: 3;
+    grid-row-start: 2;
+    grid-row-end: 3;
+}
+.left-info ul,
+.right-info ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    font-size: 14px;
+}
+.left-info ul li,
+.right-info ul li,
+.border-count {
+    margin: 0 0 10px 0;
+    font-weight: 700
+}
+.left-info h1 {
+    font-weight: 900;
+    margin: 0 0 30px 0;
+}
+.native-name{
+    color: hsl(0, 0%, 52%);
+    font-weight: 500;
+}
+.right-info ul {
+    margin: 58px 0 0 0;
+}
+.back-btn{
+    background-color: white;
+    border: 1.5px solid hsla(0, 0%, 52%, 0.4);
+    outline: none;
+    padding: 4px 30px;
+    border-radius: 3px;
+}
+.countries {
+    font-size: 12px;
+    font-weight: 500;
+    color: hsl(0, 0%, 52%);
+    background-color: white;
+    border: 1.5px solid hsla(0, 0%, 52%, 0.4);
+    padding: 4px 15px;
+    margin-right: 10px;
+}
+.border-count {
+    white-space: nowrap;
+}
+
+@media only screen and (max-width: 767px) {
+    body {
+        background-color: hsl(0, 0%, 98%);
+        margin: 0;
+        padding: 0;
+        overflow-x: hidden;
+        overflow-y: scroll;
+        scroll-behavior: smooth;
+    }
+    header {
+        align-items: center;
+        width: 100%;
+        height: 10vh;
+        padding: 2.5vh 5%;
+        box-shadow: 0px 5px 4px -2px hsla(0, 0%, 52%, 0.2);
+        margin-bottom: 30px;
+    }
+    nav {
+        flex-direction: column;
+        padding: 0 5%;
+    }
+    h1 {
+        margin: 0;
+        font-size: 17px;
+    }
+    .dark-mode {
+        cursor: pointer;
+        font-size: 14px
+    }
+    .search-bar {
+        position: relative;
+        margin: 0 0 30px 0;
+    }
+    .search {
+        width: 100%;
+        padding: 10px 10px 10px 50px;
+        background-color: white;
+        outline: none;
+        border: none;
+        box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+    }
+    .fa-solid {
+        position: absolute;
+        top: 30%;
+        left: 5%;
+    }
+    #selector {
+        outline: none;
+        border: none;
+        width: 50%;
+        margin: 0 0 30px 0;
+        box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+    }
+    .tryout {
+        outline: none;
+        border: none;
+    }
+    section {
+        display: grid;
+        grid-template-columns: 100%;
+        column-gap: 0;
+        row-gap: 40px;
+        max-width: 100%;
+        padding: 2% 15% 2% 15%;
+        margin: 0;
+    }
+    .country-info{
+        background-color: white;
+        box-shadow: 0px 0px 4px -1px hsl(0, 0%, 52%);
+        border-radius: 5px;
+    }
+    .country-img{
+        height: 150px;
+        width: 100%;
+        border-radius: 5px 5px 0 0;
+    }
+    .country-name {
+        color: black;
+        font-size: 16px;
+        overflow: hidden;
+        margin: 15px 0 15px 15px;
+        font-weight: bold;
+        white-space: nowrap;
+    }
+    .population, .region, .capital {
+        color: black;
+        font-size: 14px;
+        letter-spacing: .3px;
+        margin: 0 0 5px 15px;
+    }
+    .populate, .reg, .capit{
+        color: hsl(0, 1%, 71%);
+        font-size: 14px;
+    }
+    .capital {
+        margin-bottom: 30px;
+    }
+    aside {
+        display: none;
+        flex-direction: column;
+        gap: 50px;
+        padding: 2% 0 2% 5%;
+        max-width: 100%;
+        overflow: hidden;
+        box-sizing: border-box;
+    }
+    .more-info {
+        display: flex;
+        flex-direction: column;
+        height: auto;
+        column-gap: 50px;
+    }
+    .more-info-img{
+        margin: 0 10% 30px 5%;
+        width: 85%;
+        box-sizing: border-box;
+        height: 70%;
+    }
+    .country-infos{
+        display: grid;
+        grid-template-columns: 50%;
+        grid-template-rows: auto auto auto;
+        width: auto;
+        height: auto;
+        padding: 0 10% 0 5%;
+    }
+    .left-info {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        grid-row-end: 2;
+    }
+    .right-info {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 2;
+        grid-row-end: 3;
+    }
+    .border-countries {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 3;
+        grid-row-end: 4;
+    }
+    .left-info ul,
+    .right-info ul {
+        list-style: none;
+        margin: 0;
+        padding: 0;
+        font-size: 14px;
+    }
+    .left-info ul li,
+    .right-info ul li,
+    .border-count {
+        margin: 0 0 10px 0;
+        font-weight: 500;
+    }
+    .left-info h1 {
+        font-weight: 700;
+        margin: 10px 0 30px 0;
+    }
+    .native-name{
+        color: hsl(0, 0%, 52%);
+        font-weight: 500;
+    }
+    .right-info ul {
+        margin: 30px 0;
+    }
+    .back-btn{
+        background-color: white;
+        border: 1.5px solid hsla(0, 0%, 52%, 0.4);
+        outline: none;
+        padding: 4px 30px;
+        border-radius: 3px;
+        margin: 0 0 0 5%;
+    }
+    .countries {
+        font-size: 12px;
+        font-weight: 500;
+        color: hsl(0, 0%, 52%);
+        background-color: white;
+        border: 1.5px solid hsla(0, 0%, 52%, 0.4);
+        padding: 4px 15px;
+        margin-top: 30px;
+    }
+    .border-countries {
+        margin: 0 0 20px 0;
+    }
+    .border-count {
+        white-space: pre-wrap;
+    }
+}
